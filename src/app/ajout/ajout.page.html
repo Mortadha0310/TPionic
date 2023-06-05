@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Ajout d'un Livre</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-item color="secondary" lines="none">
+      <ion-label class="ion-text-center">
+        <h1>Ajouter un livre</h1>
+
+      </ion-label>
+
+    </ion-item>
+  </ion-card>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Titre
+      </ion-label>
+      <ion-input [(ngModel)]="titre" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Prix</ion-label>
+      <ion-input [(ngModel)]="prix" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Qte</ion-label>
+      <ion-input [(ngModel)]="qte" type="text"></ion-input>
+    </ion-item>
+  </ion-list>
+  <div>
+    <ion-button (click)="ajouter()">Ajouter</ion-button>
+  </div>
+</ion-content>
